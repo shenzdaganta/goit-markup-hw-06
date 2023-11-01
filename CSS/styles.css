@@ -8,6 +8,7 @@
     --OCEAN: #404BBF;
     --LIGHTSLATE: #8E8F99;
     --CORNFLOWER: #E7E9FC;
+    --DAIRY: #FCFCFC;
 
 }
 
@@ -131,11 +132,13 @@
 
 .button {
     border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
     border: none;
     padding: 16px 32px;
     background-color: #4D5AE5;
-    color: var(--WHITE)
-    
+    color: var(--WHITE);
+    font-size: 16px;
 }
 
 /*modal style*/
@@ -156,8 +159,8 @@
 
 .modal {
     width: 408px;
-    height: 548px;
-    background-color: var(--WHITE);
+    height: 568px;
+    background-color: var(--DAIRY);
     border-radius: 4px;
     padding: 24px;
 }
@@ -186,6 +189,130 @@
 .modal-close-button:hover {
     fill: currentColor;
     border: 1px solid currentColor;
+}
+
+.modal-invitation {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    text-align: center;
+    color: var(--NAVYBLUE);
+}
+
+.modal-label {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.input-label {
+    text-align: left;
+    margin-bottom: 4px;
+    color: var(--LIGHTSLATE);
+    font-size: 12px;
+}
+
+.modal-input {
+    width: 326px;
+    padding: 12px 38px;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon {
+    position: absolute;
+    top: 51%;
+    left: 15px;
+    fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus + .modal-icon,
+.modal-input:hover + .modal-icon  {
+    fill: var(--IRIS);
+}
+
+.modal-input:hover {
+    border: 1px solid var(--IRIS);
+}
+
+.input-label-textarea {
+    height: 120px;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+    transition: 250ms;
+    transition-property: color, border-color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 8px 16px;
+}
+
+.modal-agree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agree-checkbox {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 23px;
+    opacity: 0;
+}
+
+.agree-checkicon {
+    margin-top: 0px;
+    margin-left: 0;
+    fill: none;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-agree .agree-checkbox:focus + .agree-checkicon,
+.modal-agree .agree-checkbox:checked:focus + .agree-checkicon {
+    outline: 1px solid rgba(46, 47, 66, 0.40);
+}
+
+.modal-agree .agree-checkbox:checked + .agree-checkicon {
+    background-color: var(--IRIS);
+    border-color: var(--IRIS);
+    fill: white;
+    outline: none;
+    stroke: white;
+    stroke-width: 0.2;
+}
+
+.agree-text {
+    font-size: 15px;
+    color: var(--LIGHTSLATE);
+    margin-bottom: 15px;
+    margin-top: 16px;
+    padding-left: 8px;
+    
+}
+
+.modal-sendbtn {
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border-color: transparent;
+    border: none;
+    padding: 16px 32px;
+    background-color: #4D5AE5;
+    color: var(--WHITE);
+    font-size: 16px;
+}
+
+.modal-sendbtn:hover {
+    cursor: pointer;
 }
 
 /*End of Modal Style*/
@@ -425,8 +552,58 @@
     gap: 120px;
     display: inline-flex
     
-    
 }
+
+.input-subscribe {
+    border: 1px solid white;
+    background: none;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    margin-right: 24px;
+}
+
+.input-subscribe:placeholder-shown {
+    color: white;
+    padding-left: 16px;
+
+}
+
+.button-subscribe {
+    width: 165px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    color: white;
+    border: transparent;
+}
+
+.button-subscribe {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
+.button-subscribe {
+    border-radius: 4px;
+    background: var(--IRIS);
+}
+
+.button-subscribe:hover {
+    cursor: pointer;
+}
+
+
+.icon-subscribe {
+    fill: var(--WHITE);
+}
+
 
 /* Portfolio Style  */
 
