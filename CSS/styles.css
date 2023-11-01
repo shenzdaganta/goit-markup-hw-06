@@ -139,6 +139,8 @@
     background-color: #4D5AE5;
     color: var(--WHITE);
     font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
 }
 
 /*modal style*/
@@ -159,7 +161,7 @@
 
 .modal {
     width: 408px;
-    height: 568px;
+    height: 584px;
     background-color: var(--DAIRY);
     border-radius: 4px;
     padding: 24px;
@@ -294,21 +296,26 @@
 .agree-text {
     font-size: 15px;
     color: var(--LIGHTSLATE);
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     margin-top: 16px;
     padding-left: 8px;
-    
+
 }
 
 .modal-sendbtn {
+    width: 169px;
+    height: 56px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border-color: transparent;
     border: none;
     padding: 16px 32px;
-    background-color: #4D5AE5;
+    background-color: var(--IRIS);
     color: var(--WHITE);
     font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-top: 8px;
 }
 
 .modal-sendbtn:hover {
