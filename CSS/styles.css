@@ -570,7 +570,7 @@
     margin-right: 24px;
 }
 
-.input-subscribe:placeholder-shown {
+.input-subscribe::placeholder {
     color: white;
     padding-left: 16px;
 
